@@ -7,6 +7,60 @@
   <title>Culculator</title>
 </head>
 <body>
+  <div class="main-wrapper">
+  <h1>Income and expense calculator</h1>
+  <div class="inputs-block">
+    <div class="inputs-block-column">
+      <h6>Income per month</h6>
+      <div class="inputs-wrapper">
+        <input type="number" placeholder="Salary" id="income-salary" class="input">
+        <input type="number" placeholder="Freelance" id="income-freelance" class="input">
+        <input type="number" placeholder="Additional income" id="income-extra-1" class="input">
+        <input type="number" placeholder="Additional income" id="income-extra-2" class="input">
+      </div>
+    </div>
+    <div class="inputs-block-column">
+      <h6>Сompulsory expenditures</h6>
+      <div class="inputs-wrapper">
+        <input type="number" placeholder="Rent an apartment" id="costs-flat" class="input">
+        <input type="number" placeholder="House-services" id="costs-house-services" class="input">
+        <input type="number" placeholder="Transport" id="costs-transport" class="input">
+        <input type="number" placeholder="Payment of loans" id="costs-credit" class="input">
+      </div>
+    </div>
+    <div class="inputs-block-column">
+      <div class="total-numb">
+        <h6>Аvailable per month (no piggy bank):</h6>
+        <input type="number" class="total" id="total-month" value="0" readonly>
+      </div>
+      <div class="total-numb">
+        <h6>Аvailable per day:</h6>
+        <input type="number" class="total" id="total-day" value="0" readonly>
+      </div>
+      <div class="total-numb">
+        <h6>Accumulate in a year:</h6>
+        <input type="number" class="total" id="total-year" value="0" readonly>
+      </div>
+    </div>
+  </div>
+  <div class="range-block">
+    <h6>Piggy bank (how much do we save?)</h6>
+    <div class="range-wrapper">
+      <input type="range" min="0" max="100" value="0" id="money-box-range">
+    </div>
+    <div><span id="total-precents">0</span>%</div>
+  </div>
+  <div class="result-block">
+    <div class="total-numb">
+      <h6>Accumulate:</h6>
+      <input type="number" id="accumulation" value="0" readonly>
+    </div>
+    <div class="total-numb">
+      <h6>Spend:</h6>
+      <input type="number" id="spend" value="0" readonly>
+    </div>
+  </div>
+  </div>
   <script src="index.js"></script>
 </body>
 </html>
